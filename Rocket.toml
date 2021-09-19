@@ -1,0 +1,2 @@
+[global.databases]
+mysql_db = { url = "mysql://root:somewordpress@127.0.0.1:3306/rocket?serverTimezone=UTC" }
