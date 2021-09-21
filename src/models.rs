@@ -1,13 +1,6 @@
 use serde::Serialize;
 
-// pub mod schema;
-//use schema::posts::dsl::*;
-table! {
-  posts (id) {
-      id -> Bigint,
-      content -> Longtext,
-  }
-}
+use crate::schema::posts;
 
 #[derive(Debug, Clone, Queryable, Insertable, Serialize)]
 pub struct Post {

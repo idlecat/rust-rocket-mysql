@@ -5,10 +5,11 @@ extern crate rocket;
 extern crate diesel;
 
 pub mod models;
+pub mod schema;
 
 use diesel::prelude::*;
-use models::posts::dsl::*;
 use models::*;
+use schema::posts::dsl::*;
 
 use rocket::serde::json::Json;
 use rocket_sync_db_pools::{database, diesel as rocket_diesel};
